@@ -692,9 +692,9 @@ function use(items) {
     parent.postMessage({
       mceAction: 'insert',
       content: url
-    });
+    }, "*");
 
-    parent.postMessage({ mceAction: 'close' });
+    parent.postMessage({ mceAction: 'close' }, "*");
   }
 
   function useCkeditor3(url) {
